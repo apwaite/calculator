@@ -15,14 +15,14 @@ const divide = (n1, n2) => {
 };
 
 const exponent = (n1, n2) => {
-  Math.pow(n1, n2);
+  return Math.pow(n1, n2);
 };
 
 const mod = (n1, n2) => {
   // % is the remainder operator in JavaScript and only works on positive values.
   // The below formula allows JavaSript to replicate true modulo. For more information
   // please see: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder
-  ((n1 % n2) + n2) % n2;
+  return ((n1 % n2) + n2) % n2;
 };
 
 // const factorial = (n1) => {
