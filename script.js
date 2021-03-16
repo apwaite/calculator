@@ -12,33 +12,63 @@ const delButton = document.querySelector(".del");
 
 const ceButton = document.querySelector(".ce");
 
-let opOne = "";
-let opTwo = "";
+let num1 = "";
+let num2 = "";
 let currOp = null;
+let toBeCleared = false;
 
 ceButton.addEventListener("click", clearEverything);
 
 delButton.addEventListener("click", delLast);
+
+eqButton.addEventListener('click', calculate);
+
+decButton.addEventListener('click', addDecimal);
 
 numButtons.forEach((button) => {
   button.addEventListener("click", () => appendNum(button.textContent));
 });
 
 opButtons.forEach((button) => {
-  button.addEventListener("click", () => setOp(button.textContent));
+  button.addEventListener("click", () => addOp(button.textContent));
 });
 
 function appendNum(num) {
-  if (display.textContent === "0") {
+  if (display.textContent === "0" || toBeCleared) {
     clearDisplay();
   }
   display.textContent += num;
 }
 
+function addOp(op) {
+  if (currOp !== null) {
+    calculate();
+  }
+  num1 = display.textContent;
+  currOp = op;
+  toBeCleared = true;
+}
+
+function calculate() {
+  if (currOp === null || toBeCleared) {
+    return;
+  }
+  num2 = display.textContent;
+  display.textContent = Math.round(operate(num1, currOp, num2) * 100) / 100;
+  currOp = null;
+}
+
+function addDecimal() {
+  if (display.textContent.includes(".")) {
+    return;
+  }
+  display.textContent += ".";
+}
+
 function clearEverything() {
   display.textContent = "0";
-  opOne = "";
-  opTwo = "";
+  num1 = "";
+  num2 = "";
   currOp = null;
 }
 
@@ -52,6 +82,7 @@ function delLast() {
 
 function clearDisplay() {
   display.textContent = "";
+  toBeCleared = false;
 }
 
 const add = (n1, n2) => {
@@ -97,7 +128,7 @@ const operate = (n1, op, n2) => {
       return multiply(n1, n2);
     case "/":
       if (n2 === 0) {
-        return "Cannot divide by zero";
+        return "ERROR";
       }
       return divide(n1, n2);
     case "^":
