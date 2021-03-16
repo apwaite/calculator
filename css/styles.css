@@ -12,11 +12,10 @@
   --display-border: 1px solid rgb(0, 0, 0);
   --calc-border: 2px solid rgb(0, 0, 0);
   --calc-container: rgb(153, 153, 153);
-  /*rgb(204, 255, 255)*/
   --button: rgb(204, 204, 204);
-  /*rgb(204, 153, 255);*/
-  --button-hover: rgb(191, 191, 191);
-  /*rgb(153, 153, 102);*/
+  --numButton-hover: rgb(173, 173, 173);
+  --opButton-hover: rgb(204, 255, 255);
+  --eqButton-hover: rgb( 	255, 127, 80);
 }
 
 body {
@@ -77,8 +76,16 @@ button {
   outline: none;
 }
 
-button:hover {
-  background: var(--button-hover);
+.num:hover {
+  background: var(--numButton-hover);
+}
+
+.op:hover, .dec:hover {
+  background: var(--opButton-hover);
+}
+
+.equals:hover, .ce:hover, .del:hover {
+  background: var(--eqButton-hover);
 }
 
 /*
