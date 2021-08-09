@@ -15,7 +15,7 @@
   --button: rgb(204, 204, 204);
   --numButton-hover: rgb(173, 173, 173);
   --opButton-hover: rgb(204, 255, 255);
-  --eqButton-hover: rgb( 	255, 127, 80);
+  --eqButton-hover: rgb(255, 127, 80);
 }
 
 body {
@@ -80,11 +80,14 @@ button {
   background: var(--numButton-hover);
 }
 
-.op:hover, .dec:hover {
+.op:hover,
+.dec:hover {
   background: var(--opButton-hover);
 }
 
-.equals:hover, .ce:hover, .del:hover {
+.equals:hover,
+.ce:hover,
+.del:hover {
   background: var(--eqButton-hover);
 }
 
