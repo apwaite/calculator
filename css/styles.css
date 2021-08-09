@@ -13,8 +13,6 @@
   --numButton-hover: rgb(173, 173, 173);
   --opButton-hover: rgb(204, 255, 255);
   --eqButton-hover: rgb(255, 127, 80);
-  --header-footer-color: #212121;
-  --sect-border: 2px solid rgb(14, 14, 14);
 }
 
 body {
