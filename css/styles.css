@@ -5,16 +5,16 @@
   --bg-color: #f5f5f5;
   --font-primary: #f5f5f5;
   --font-secondary: #424242;
-  --display: rgb(204, 204, 204);
+  --display: #cccccc;
   --display-border: 1px solid rgb(0, 0, 0);
   --calc-border: 2px solid rgb(0, 0, 0);
-  --calc-container: rgb(153, 153, 153);
-  --button: rgb(204, 204, 204);
+  --calc-container: #999999;
+  --button: #cccccc;
   --numButton-hover: rgb(173, 173, 173);
   --opButton-hover: rgb(204, 255, 255);
   --eqButton-hover: rgb(255, 127, 80);
   --header-footer-color: #212121;
-  --sect-border: 2px solid rgb(14, 14, 14);
+  --sect-border: 2px solid #000000;
 }
 
 body {
