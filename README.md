@@ -1,3 +1,7 @@
+# Calculator
+
+## Short Description
+
 A basic calculator app with the following functionality:
 
 1. add
@@ -6,3 +10,5 @@ A basic calculator app with the following functionality:
 4. divide
 5. modulo
 6. exponent
+
+## Features
