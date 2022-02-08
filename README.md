@@ -12,3 +12,5 @@ A basic calculator app with the following functionality:
 6. exponent
 
 ## Features
+
+Aside from the above this calculator always the user to use decimal places, delete previous number entries and clear all previous data.
