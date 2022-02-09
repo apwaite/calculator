@@ -13,4 +13,6 @@ A basic calculator app with the following functionality:
 
 ## Features
 
-Aside from the above this calculator always the user to use decimal places, delete previous number entries and clear all previous data.
+Aside from the above this calculator allows the user to use decimals/floating point numbers, delete previous number entries using the delete button, and clear all previous data.
+
+## Challenges
