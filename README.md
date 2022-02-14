@@ -11,7 +11,7 @@ A basic calculator app with the following functionality:
 5. modulo
 6. exponent
 
-[Link to Restaurant Page](https://apwaite.github.io/calculator/)
+[Link to Calculator Page](https://apwaite.github.io/calculator/)
 
 ## Features
 
