@@ -11,6 +11,8 @@ A basic calculator app with the following functionality:
 5. modulo
 6. exponent
 
+[Link to Restaurant Page](https://apwaite.github.io/calculator/)
+
 ## Features
 
 Aside from the above this calculator allows the user to use decimals/floating point numbers, delete previous number entries using the delete button, and clear all previous data.
